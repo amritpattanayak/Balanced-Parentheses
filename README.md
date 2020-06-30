@@ -7,7 +7,7 @@ Example:
 
 (10 + 20) = 30            //Balanced
 
-{Balanced} {Parentheses}   //Balanced
+{loren} {ipsum}   //Balanced
 
 [{loren (ipsum)}]          //Balanced
 
