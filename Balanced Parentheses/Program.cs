@@ -12,13 +12,20 @@ namespace Balanced_Parentheses
     {
         static void Main(string[] args)
         {
+            Start:
             Console.WriteLine("Enter a string to check Balanced Parentheses (), {}, [].");
             string expression = Console.ReadLine(); //Read the Input string
             if (IsBalanced(expression))
                 Console.WriteLine("Balanced");
             else
                 Console.WriteLine("Not balanced");
-            Console.ReadLine();
+
+            Console.WriteLine("Do you want to evaluate new expression? (y/n)");
+            string moreEvalaution = Console.ReadLine();
+            if (moreEvalaution == "y")
+            {
+                goto Start;
+            }
         }
 
         /// <summary>
